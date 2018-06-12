@@ -6,7 +6,6 @@ import tkinter as tk
 mouse = Controller()
 root = tk.Tk()
 
-
 pinchFlag = 0
 openx, openy, openw, openh = (0, 0, 0, 0)
 
@@ -31,6 +30,7 @@ DampingFactor = 2
 
 # mouseLoc = mLocOld + (targetLoc-mLocOld)/DampingFactor
 while True:
+    # do some image processing
     ret, img = cam.read()
     imgHSV = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
     mask = cv2.inRange(imgHSV, lowerBound, upperBound)

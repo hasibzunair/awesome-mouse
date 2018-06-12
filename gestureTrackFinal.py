@@ -46,6 +46,8 @@ while True:
             mouse.release(Button.left)
         x1, y1, w1, h1 = cv2.boundingRect(conts[0])
         x2, y2, w2, h2 = cv2.boundingRect(conts[1])
+        
+        # do some math here
         cv2.rectangle(img, (x1, y1), (x1 + w1, y1 + h1), (0, 0, 255), 2)
         cv2.rectangle(img, (x2, y2), (x2 + w2, y2 + h2), (0, 0, 255), 2)
         cx1 = int(x1 + w1 / 2)

@@ -4,7 +4,7 @@ I have filtered the green colour using appropriate BGR values. Then by using mor
 
 # Core libraries used :
 
-* cv2
+* cv
 * numpy
 * pynput
 * tkinter
